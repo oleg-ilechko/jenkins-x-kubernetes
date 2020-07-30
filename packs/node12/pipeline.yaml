@@ -1,3 +1,5 @@
+extends:
+  file: ../typescript/pipeline.yaml
 agent:
   image: gcr.io/jenkinsxio/builder-nodejs12x
 pipelines:
