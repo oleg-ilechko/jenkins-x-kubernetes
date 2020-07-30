@@ -8,3 +8,9 @@ pipelines:
     build:
       steps:
       - sh: echo IT IS CUSTOM BUILD PACK
+      - sh: npm install
+  release:
+    build:
+      steps:
+      - sh: echo IT IS CUSTOM BUILD PACK
+      - sh: npm install
