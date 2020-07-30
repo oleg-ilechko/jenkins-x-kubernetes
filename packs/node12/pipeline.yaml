@@ -6,7 +6,6 @@ pipelines:
     build:
       steps:
       - sh: echo IT IS CUSTOM BUILD PACK
-      - sh: npm install
   release:
     setup:
       preSteps:
@@ -18,10 +17,8 @@ pipelines:
       - sh: echo NODE12 echo IT IS prerelease
     build:
       steps:
-      - sh: echo IT IS CUSTOM NODE12 BUILD PACK
-      - sh: npm install
+      - sh: echo IT IS CUSTOM NODE12 BUILD PAC
   feature:
     build:
       steps:
       - sh: echo IT IS CUSTOM NODE12 BUILD PACK
-      - sh: npm install
