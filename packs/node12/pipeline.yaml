@@ -1,6 +1,5 @@
 agent:
-  label: jenkins-nodejs
-  container: nodejs
+  image: gcr.io/jenkinsxio/builder-nodejs12x
 pipelines:
   pullRequest:
     build:
