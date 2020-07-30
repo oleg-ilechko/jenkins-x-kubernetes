@@ -3,4 +3,8 @@ extends:
 agent:
   label: jenkins-nodejs
   container: nodejs
-
+pipelines:
+  pullRequest:
+    build:
+      steps:
+      - sh: echo IT IS CUSTOM BUILD PACK
