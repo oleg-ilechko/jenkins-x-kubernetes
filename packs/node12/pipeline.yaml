@@ -17,7 +17,7 @@ pipelines:
       - sh: echo NODE12 AFTER release SETUP
     preBuild:
       steps:
-      - sh: NODE12 echo IT IS prerelease
+      - sh: echo NODE12 echo IT IS prerelease
     build:
       steps:
       - sh: echo IT IS CUSTOM NODE12 BUILD PACK
