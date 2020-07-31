@@ -1,6 +1,6 @@
 extends:
-  file: ../javascript/pipeline.yaml
+  import: kubernetes
+  file: ../typescript/pipeline.yaml
 agent:
-  label: jenkins-nodejs
+  label: jenkins-nodejs12x
   container: nodejs
-

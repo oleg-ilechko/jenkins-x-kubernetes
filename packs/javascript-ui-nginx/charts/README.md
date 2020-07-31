@@ -1,1 +1,0 @@
-# Javascript UI application with Nginx
