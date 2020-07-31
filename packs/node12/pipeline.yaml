@@ -1,26 +1,6 @@
 extends:
+  import: kubernetes
   file: ../typescript/pipeline.yaml
 agent:
-  label: jenkins-nodejs
+  label: jenkins-nodejs12x
   container: nodejs
-pipelines:
-  pullRequest:
-    build:
-      steps:
-      - sh: echo IT IS CUSTOM BUILD PACK
-  release:
-    setup:
-      preSteps:
-      - sh: echo NODE12 BEFORE release SETUP
-      steps:
-      - sh: echo NODE12 AFTER release SETUP
-    preBuild:
-      steps:
-      - sh: echo NODE12 echo IT IS prerelease
-    build:
-      steps:
-      - sh: echo IT IS CUSTOM NODE12 BUILD PAC
-  feature:
-    build:
-      steps:
-      - sh: echo IT IS CUSTOM NODE12 BUILD PACK
